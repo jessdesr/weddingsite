@@ -1,63 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>It's our wedding!</title>
-  <meta name="description" content="A wedding website for two people">
-  <meta name="author" content="Jess & Christine">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="icon" type="image/png" href="images/favicon.png">
-
-</head>
-<body>
-<section class="container">
-  <div class="section header">
-      <img class="background" src="images/headerWEB.png"/>
-      <div class="center">
-        <img class="logo" alt="Jess Desrochers and Christine Reimer" src="images/weddingLogo.svg"/>
-        <h5>Invite you to celebrate their marriage</h5>
+  <head>
+    <meta charset="utf-8" />
+    <title>It's our wedding!</title>
+    <meta name="description" content="A wedding website for two people" />
+    <meta name="author" content="Jess & Christine" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="section header">
+        <img class="background" src="images/headerWEB.png" />
+        <div class="center">
+          <img
+            class="logo"
+            alt="Jess Desrochers and Christine Reimer"
+            src="images/weddingLogo.svg"
+          />
+          <h5>Invite you to celebrate their marriage</h5>
+        </div>
       </div>
-  </div>
-<div class="section rsvp">
+      <!-- <div class="section rsvp">
   <label>Please RSVP for the name(s) listed on your invitation.</label>
     <form id="rsvp-form">
       <div class="row">
-        <button type='button' onclick="showNext()">Add Guest</button>
-        <button type='button' onclick="hide()">Remove Guest</button>
+        <button type='button' onclick="showNext()">Add Person</button>
+        <button type='button' onclick="hide()">Remove Person</button>
         <div id="name_1">
-          <label for="name_1">Guest's Name</label>
+          <label for="name_1">Name</label>
           <input type="text" name="name_1" id="input_name_1"/>
           <label for="name_1_attend">Attending?</label>
           <input type="radio" name="name_1_attend" value="Yes">Yes</input>
           <input type="radio" name="name_1_attend" value="No">No</input>
         </div>
         <div id="name_2" style="display: none;">
-          <label for="name_2">Guest's Name</label>
+          <label for="name_2">Name</label>
           <input type="text" name="name_2" id="input_name_2"/>
           <label for="name_2_attend">Attending?</label>
           <input type="radio" name="name_2_attend" id="name_2_attend_yes" value="Yes">Yes</input>
           <input type="radio" name="name_2_attend" id="name_2_attend_no" value="No">No</input>
         </div>
         <div id="name_3" style="display: none;">
-          <label for="name_3">Guest's Name</label>
+          <label for="name_3">Name</label>
           <input type="text" name="name_3" id="input_name_3"/>
           <label for="name_3_attend">Attending?</label>
           <input type="radio" name="name_3_attend" id="name_3_attend_yes" value="Yes">Yes</input>
           <input type="radio" name="name_3_attend" id="name_3_attend_no" value="No">No</input>
         </div>
         <div id="name_4" style="display: none;">
-          <label for="name_4">Guest's Name</label>
+          <label for="name_4">Name</label>
           <input type="text" name="name_4" id="input_name_4"/>
           <label for="name_4_attend">Attending?</label>
           <input type="radio" name="name_4_attend" id="name_4_attend_yes" value="Yes">Yes</input>
           <input type="radio" name="name_4_attend" id="name_4_attend_no" value="No">No</input>
         </div>
         <div id="name_5" style="display: none;">
-          <label for="name_5">Guest's Name</label>
+          <label for="name_5">Name</label>
           <input type="text" name="name_5" id="input_name_5"/>
           <label for="name_5_attend">Attending?</label>
           <input type="radio" name="name_5_attend" id="name_5_attend_yes" value="Yes">Yes</input>
@@ -69,97 +78,129 @@
       <button class="button-primary btn" type="submit" id="submit-form" onclick="return empty()">Submit</button>
     </form>
     <p id="submit-message" style="display: none;">Thank you for your response! Please reach out if you have any questions!</p>
-  </div>
-  <img class="right" src="images/hit1.png"/>
-  <div class="section details">
-          <h4>Day of Details</h4>
-          <p>Come celebrate our wedding (and <span class="strikethrough">ten</span> twelve year anniversary!) on Saturday, April 9th at the Loft at Earls, in Yaletown. Please plan to arrive at <b>3:30pm</b> so the ceremony can start promptly at <b>4:00pm</b>. Cocktail hour, dinner and dancing will follow!</p>
-          <p>Dinner will be family style, with a <b>vegetarian and a meat</b> option available. If you have any dietary restrictions or allergies that we need to be aware of, please let us know.</p>
-          <p>We will be offering wine with dinner and drink tickets for the bar. The bar will also have drinks for purchase for any further refreshments you may want!</p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2603.032758962726!2d-123.12275068408636!3d49.275776479180664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673d659898bf3%3A0x6221946c045f25b!2sEarls%20Kitchen%20%2B%20Bar!5e0!3m2!1sen!2sca!4v1578183198622!5m2!1sen!2sca" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        <img class="left" src="images/hit2.png"/>
-  </div>
-  <div class="section accomodation">
-    <h4>Accomodation</h4>
-    <p>If you're looking for a place to stay we have a block of rooms at a preferred rate at the <b>Opus Hotel</b>, a few blocks away from the venue. </p>
-      <a class="btn" target="_blank" href="https://be.synxis.com/?adult=1&arrive=2022-04-09&chain=11727&child=0&currency=CAD&depart=2022-04-10&hotel=28558&level=hotel&locale=en-US&rooms=1">see rooms</a>
-  </div>
-  <div class="section registry">
-   <h4>Gifts</h4>
-   <p>We don't have a registry as we have been living together for a while; however, if you would like to bring a gift, cash gifts are welcome!</p>
-  </div>
-  <img class="last" src="images/hit3.png"/>
-</section> 
-</body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script>
-
-  $.fn.serializeObject = function() {
-    var o = {};
-    var a = this.serializeArray();
-    $.each(a, function() {
-      if (o[this.name]) {
-        if (!o[this.name].push) {
-          o[this.name] = [o[this.name]];
+  </div> -->
+      <img class="right" src="images/hit1.png" />
+      <div class="section details">
+        <h4>Day of Details</h4>
+        <p>
+          Come celebrate our wedding (and
+          <span class="strikethrough">ten</span> twelve year anniversary!) on
+          Saturday, April 9th at the Loft at Earls, in Yaletown. Please plan to
+          arrive at <b>3:30pm</b> so the ceremony can start promptly at
+          <b>4:00pm</b>. Cocktail hour, dinner and dancing will follow!
+        </p>
+        <p>
+          Dinner will be family style, with a
+          <b>vegetarian and a meat</b> option available. If you have any dietary
+          restrictions or allergies that we need to be aware of, please let us
+          know.
+        </p>
+        <p>
+          We will be offering wine with dinner and drink tickets for the bar.
+          The bar will also have drinks for purchase for any further
+          refreshments you may want!
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2603.032758962726!2d-123.12275068408636!3d49.275776479180664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673d659898bf3%3A0x6221946c045f25b!2sEarls%20Kitchen%20%2B%20Bar!5e0!3m2!1sen!2sca!4v1578183198622!5m2!1sen!2sca"
+          width="100%"
+          height="300"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+        ></iframe>
+        <img class="left" src="images/hit2.png" />
+      </div>
+      <div class="section accomodation">
+        <h4>Accomodation</h4>
+        <p>
+          If you're looking for a place to stay we have a block of rooms at a
+          preferred rate at the <b>Opus Hotel</b>, a few blocks away from the
+          venue.
+        </p>
+        <a
+          class="btn"
+          target="_blank"
+          href="https://be.synxis.com/?adult=1&arrive=2022-04-09&chain=11727&child=0&currency=CAD&depart=2022-04-10&hotel=28558&level=hotel&locale=en-US&rooms=1"
+          >see rooms</a
+        >
+      </div>
+      <div class="section registry">
+        <h4>Gifts</h4>
+        <p>
+          We don't have a registry as we have been living together for a while;
+          however, if you would like to bring a gift, cash gifts are welcome!
+        </p>
+      </div>
+      <img class="last" src="images/hit3.png" />
+    </section>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+    $.fn.serializeObject = function () {
+      var o = {};
+      var a = this.serializeArray();
+      $.each(a, function () {
+        if (o[this.name]) {
+          if (!o[this.name].push) {
+            o[this.name] = [o[this.name]];
+          }
+          o[this.name].push(this.value || "");
+        } else {
+          o[this.name] = this.value || "";
         }
-        o[this.name].push(this.value || '');
-      } else {
-        o[this.name] = this.value || '';
+      });
+      return o;
+    };
+
+    let position = 1;
+
+    function showNext() {
+      if (position < 5) {
+        position += 1;
+        var e = document.getElementById("name_" + position);
+        e.style.display = "block";
       }
-    });
-    return o;
-  };
-
-  let position = 1;
-
-  function showNext() {
-    if (position < 5) {
-      position += 1;
-      var e = document.getElementById('name_' + position);
-      e.style.display = 'block'
     }
-  }
 
-  function hide() {
-    if (position >= 2) {
-      var e = document.getElementById('name_' + position);
-      e.style.display = 'none'
-      var i = document.getElementById('input_name_' + position);
-      i.value = "";
-      position -= 1;
+    function hide() {
+      if (position >= 2) {
+        var e = document.getElementById("name_" + position);
+        e.style.display = "none";
+        var i = document.getElementById("input_name_" + position);
+        i.value = "";
+        position -= 1;
+      }
     }
-  }
 
-  function empty() {
-    var x;
-    x = document.getElementById("name_1").value;
-    if (x == "") {
+    function empty() {
+      var x;
+      x = document.getElementById("name_1").value;
+      if (x == "") {
         alert("Enter a Valid Name");
         return false;
-    };
-}
+      }
+    }
 
-  
-  var $form = $('form#rsvp-form'),
-      url = 'https://script.google.com/macros/s/AKfycbzHH0VzBg28Tko3Me343teCH5Z13qsAXVw3EgzqDMfDTr48Ueg/exec'
+    var $form = $("form#rsvp-form"),
+      url =
+        "https://script.google.com/macros/s/AKfycbzHH0VzBg28Tko3Me343teCH5Z13qsAXVw3EgzqDMfDTr48Ueg/exec";
 
-  $('#submit-form').on('click', function(e) {
-    e.preventDefault();
-    $("#submit-form").attr("disabled", true);
-    $("#submit-form").html('<i class="fa fa-circle-o-notch fa-spin"></i> Sending')
+    $("#submit-form").on("click", function (e) {
+      e.preventDefault();
+      $("#submit-form").attr("disabled", true);
+      $("#submit-form").html(
+        '<i class="fa fa-circle-o-notch fa-spin"></i> Sending'
+      );
 
-    
-    var jqxhr = $.ajax({
-      url: url,
-      method: "GET",
-      dataType: "json",
-      data: $form.serializeObject()
-    }).success(function() {
-      document.getElementById("rsvp-form").style.display = "none";
-      document.getElementById("submit-message").style.display = "block";
+      var jqxhr = $.ajax({
+        url: url,
+        method: "GET",
+        dataType: "json",
+        data: $form.serializeObject(),
+      }).success(function () {
+        document.getElementById("rsvp-form").style.display = "none";
+        document.getElementById("submit-message").style.display = "block";
+      });
     });
-  })
-
-</script>
+  </script>
 </html>
-
