@@ -491,6 +491,9 @@ iframe {
     bottom: -5em;
     z-index: 0;
 }
+.strikethrough{
+  text-decoration: line-through;
+}
 @media (max-width: 925px){
   .logo {
     width: 350px;
@@ -538,5 +541,4 @@ padding: 8.5em 12px 0 12px;
     max-width: 150px;
     bottom: -5em;
 }
-
 }
